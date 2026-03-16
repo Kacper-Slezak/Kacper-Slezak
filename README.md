@@ -7,7 +7,7 @@ Hi. I'm a 3rd-year engineering student focused on DevOps, cloud infrastructure, 
 ### Current Projects
 
 * **B.Sc. Thesis — Adaptive Service Mesh Configuration** *(in progress)*
-  Investigating Istio and Envoy performance overhead in Kubernetes. Analyzing cryptographic cost of TLS 1.2/1.3 cipher suites, load testing with Fortio, and optimizing Service Mesh for edge environments with limited CPU.
+  Investigating Istio and Envoy performance overhead in Kubernetes. Analyzing cryptographic cost of TLS 1.2/1.3 cipher suites, load testing with K6s, and optimizing Service Mesh for edge environments with limited CPU.
 
 * **[SOTP — System Observability & Telemetry Platform](https://github.com/kacper-slezak/SOTP)**
   Core Developer & DevOps. Designing and deploying a microservices-based monitoring solution with TimescaleDB, PostgreSQL, Prometheus/Grafana stack. Maintaining GitHub Actions CI/CD pipelines for automated testing and image builds.
