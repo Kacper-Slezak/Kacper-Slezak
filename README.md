@@ -44,27 +44,18 @@ Real-time threat mapping with AI-driven article classification. Built in 24h. In
 
 ---
 
-## Stats
+### GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kacper-slezak&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kacper-slezak&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Kacper-Slezak&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Kacper's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kacper-Slezak&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%" />
 </div>
-
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=kacper-slezak&theme=tokyonight&hide_border=true&background=0D1117" width="60%" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kacper-slezak&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=6" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kacper-slezak&theme=tokyo-night&bg_color=0D1117&hide_border=true" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kacper-Slezak&theme=tokyo-night&bg_color=0D1117&hide_border=true" alt="Contribution Graph" width="100%" />
 </div>
 
 ---
 
-## Reach me
+**[LinkedIn](https://www.linkedin.com/in/kacper-%C5%9Bl%C4%99zak-739a20285/) · [GitHub](https://github.com/kacper-slezak) · kacper.slezak.cv@gmail.com**
 
 [LinkedIn](https://www.linkedin.com/in/kacper-ślęzak-739a20285/) · kacper.slezak.cv@gmail.com
