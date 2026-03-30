@@ -1,56 +1,70 @@
-**DevOps & Backend Developer | ICT Student @ AGH University of Science and Technology, Kraków**
+# Kacper Ślęzak
 
-Hi. I'm a 3rd-year engineering student focused on DevOps, cloud infrastructure, and backend development. I like building systems that are observable, automated, and don't fall apart at 3am.
+**DevOps & Backend Developer · ICT Student @ AGH University of Krakow · SRE Intern @ IBM**
 
----
-
-### Current Projects
-
-* **B.Sc. Thesis — Adaptive Service Mesh Configuration** *(in progress)*
-  Investigating Istio and Envoy performance overhead in Kubernetes. Analyzing cryptographic cost of TLS 1.2/1.3 cipher suites, load testing with K6s, and optimizing Service Mesh for edge environments with limited CPU.
-
-* **[SOTP — System Observability & Telemetry Platform](https://github.com/kacper-slezak/SOTP)**
-  Core Developer & DevOps. Designing and deploying a microservices-based monitoring solution with TimescaleDB, PostgreSQL, Prometheus/Grafana stack. Maintaining GitHub Actions CI/CD pipelines for automated testing and image builds.
-
-* **ThreatLens — AI Threat Map** *(HackYeah 2025)*
-  Backend & AI Integrator. Co-developed a real-time security threat mapping app during a 24h hackathon. Integrated Groq and Gemini models for article filtering and handled final backend/frontend integration under pressure.
-
-* **IBM** *(SRE Intern)*
-  Writing Python automation, and integrating AI tools to reduce operational toil on enterprise systems.
+I build systems that are observable, automated, and resilient under load. Currently finishing my B.Sc. thesis on cryptographic overhead in Kubernetes service meshes.
 
 ---
 
-### Stack
+## What I'm working on
 
-| Area | Tools |
+**[SOTP — System Observability & Telemetry Platform](https://github.com/kacper-slezak/SOTP)**
+A production-grade network monitoring platform built from scratch. Async Python microservices, Celery workers for ICMP/SNMP collection, TimescaleDB for time-series metrics, HashiCorp Vault for secrets, and a full GitHub Actions CI/CD pipeline. Every architectural decision has a documented reason.
+
+**B.Sc. Thesis — mTLS Performance Overhead in Istio**
+Benchmarking the real cryptographic cost of TLS 1.2 vs 1.3 in a Kubernetes service mesh. Forced protocol downgrades through Envoy's `EnvoyFilter` API, ran load tests with K6, and measured CPU/latency deltas. TLS 1.3 turned out to be both faster and cheaper on CPU. Full research log and raw results in the repo.
+
+**[Entry System — Biometric 2FA Access Control](https://github.com/kacper-slezak/entry-system)**
+High-security entry system combining QR code scanning with facial recognition (Facenet512). FastAPI backend, PostgreSQL, DeepFace/OpenCV for biometrics, async email delivery on employee creation, and a GitHub Actions suite with mocked biometric embeddings for reliable CI. Containerised with Docker Compose.
+
+**[ThreatLens — AI Safety Heatmap](https://github.com/kacper-slezak/ThreatLens)** *(HackYeah 2025)*
+Real-time threat mapping with AI-driven article classification. Built in 24h. Integrated Groq and Gemini APIs for filtering and deduplication, handled full backend/frontend integration under time pressure.
+
+---
+
+## Stack
+
+| | |
 |---|---|
-| **Languages** | Python, Java, Bash |
-| **Containers & Orchestration** | Docker, Docker Compose, Kubernetes |
-| **Service Mesh** | Istio, Envoy |
-| **Observability** | Prometheus, Grafana, TimescaleDB |
-| **Databases** | PostgreSQL, SQLite |
-| **CI/CD & Workflow** | GitHub Actions, Linux, Git |
+| **Languages** | Python · Java · Bash |
+| **Containers & Orchestration** | Docker · Kubernetes · k3d |
+| **Service Mesh** | Istio · Envoy |
+| **Observability** | Prometheus · Grafana · TimescaleDB |
+| **Backend** | FastAPI · Flask · SQLAlchemy · Celery |
+| **CI/CD** | GitHub Actions · Git |
+| **Databases** | PostgreSQL · SQLite · Redis |
 
 ---
 
-###  Currently Learning
+## Currently learning
 
-- **CCNA** — networking fundamentals, in progress
-- **Kubernetes CKA** — going deeper beyond basic deployments
-- **Cloud platforms** — AWS fundamentals 
+- **CCNA** — routing, switching, network fundamentals
+- **Kubernetes CKA** — going deeper than basic deployments
+- **AWS** — cloud fundamentals, working toward Solutions Architect
 
 ---
 
-### GitHub Stats
+## Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kacper-slezak&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Kacper's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kacper-slezak&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=kacper-slezak&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kacper-slezak&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%" />
 </div>
+
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kacper-slezak&theme=tokyo-night&bg_color=0D1117&hide_border=true" alt="Contribution Graph" width="100%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=kacper-slezak&theme=tokyonight&hide_border=true&background=0D1117" width="60%" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=kacper-slezak&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=6" width="100%" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kacper-slezak&theme=tokyo-night&bg_color=0D1117&hide_border=true" width="100%" />
 </div>
 
 ---
 
-**[LinkedIn](https://www.linkedin.com/in/kacper-%C5%9Bl%C4%99zak-739a20285/) · [GitHub](https://github.com/kacper-slezak) · kacper.slezak.cv@gmail.com**
+## Reach me
+
+[LinkedIn](https://www.linkedin.com/in/kacper-ślęzak-739a20285/) · kacper.slezak.cv@gmail.com
