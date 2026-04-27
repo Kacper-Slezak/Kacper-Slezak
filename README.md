@@ -11,7 +11,7 @@ I build systems that are observable, automated, and resilient under load. Curren
 **[SOTP — System Observability & Telemetry Platform](https://github.com/kacper-slezak/SOTP)**
 A production-grade network monitoring platform built from scratch. Async Python microservices, Celery workers for ICMP/SNMP collection, TimescaleDB for time-series metrics, HashiCorp Vault for secrets, and a full GitHub Actions CI/CD pipeline. Every architectural decision has a documented reason.
 
-**B.Sc. Thesis — mTLS Performance Overhead in Istio**
+**[B.Sc. Thesis — mTLS Performance Overhead in Istio](https://github.com/Kacper-Slezak/B.Sc.-Thesis---mTLS-Performance-Overhead-in-Istio)**
 Benchmarking the real cryptographic cost of TLS 1.2 vs 1.3 in a Kubernetes service mesh. Forced protocol downgrades through Envoy's `EnvoyFilter` API, ran load tests with K6, and measured CPU/latency deltas. TLS 1.3 turned out to be both faster and cheaper on CPU. Full research log and raw results in the repo.
 
 **[Entry System — Biometric 2FA Access Control](https://github.com/kacper-slezak/entry-system)**
@@ -48,7 +48,9 @@ Real-time threat mapping with AI-driven article classification. Built in 24h. In
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kacper-slezak&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Kacper's GitHub Stats" width="48%" />
+  
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kacper-slezak&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%" />
+  
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kacper-slezak&theme=tokyo-night&bg_color=0D1117&hide_border=true" alt="Contribution Graph" width="100%" />
 </div>
 
