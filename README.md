@@ -5,7 +5,7 @@ B.Sc. thesis on the cost of mTLS and post-quantum key exchange in a Kubernetes s
 
 ## Projects
 
-**[Istio PQC mTLS benchmark](LINK)** — B.Sc. thesis  
+**[Istio PQC mTLS benchmark](https://github.com/Kacper-Slezak/Thesis_PQC)** — B.Sc. thesis  
 Measures CPU and latency cost of mTLS in Istio: TLS 1.2 vs 1.3, classical X25519 vs hybrid post-quantum X25519MLKEM768. Configurations are forced with EnvoyFilters and verified from Envoy statistics on every run. Automated k3d + Istio setup, K6 load generation, Prometheus metrics, multi-session campaigns with paired statistical tests.
 
 **[SOTP](https://github.com/Kacper-Slezak/SOTP)** — network monitoring platform, in **development**  
