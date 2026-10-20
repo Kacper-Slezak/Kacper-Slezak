@@ -1,14 +1,16 @@
 SRE intern at IBM, ICT student at AGH University of Krakow. Writing a B.Sc. thesis on what mTLS and post-quantum key exchange cost a Kubernetes service mesh, and building [SOTP](https://github.com/Kacper-Slezak/SOTP), a network monitoring platform, in the open.
 
-### Thesis
+### Thesis ![now: analysis](https://img.shields.io/badge/now-analysis-9a6700?style=flat-square&labelColor=424a53)
 
-[Istio PQC mTLS benchmark](https://github.com/Kacper-Slezak/Thesis_PQC): CPU and latency cost of mTLS in Istio, TLS 1.2 vs 1.3 and classical X25519 vs hybrid post-quantum X25519MLKEM768. Each configuration is forced with an EnvoyFilter and verified from Envoy statistics on every run. k3d, Istio, K6, Prometheus, paired statistical tests across sessions.
+[Istio PQC mTLS benchmark](https://github.com/Kacper-Slezak/Thesis_PQC): CPU and latency cost of mTLS in Istio, TLS 1.2 vs 1.3 and classical X25519 vs hybrid post-quantum X25519MLKEM768. Each configuration is forced with an EnvoyFilter and verified from Envoy statistics on every run. Paired statistical tests across measurement sessions.
 
-Status: measurement campaign done, analysis in progress.
+![Kubernetes](https://img.shields.io/badge/Kubernetes-424a53?style=flat-square&logo=kubernetes&logoColor=white) ![Istio](https://img.shields.io/badge/Istio-424a53?style=flat-square&logo=istio&logoColor=white) ![Envoy](https://img.shields.io/badge/Envoy-424a53?style=flat-square&logo=envoyproxy&logoColor=white) ![k3d](https://img.shields.io/badge/k3d-424a53?style=flat-square&logo=k3s&logoColor=white) ![K6](https://img.shields.io/badge/K6-424a53?style=flat-square&logo=k6&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-424a53?style=flat-square&logo=prometheus&logoColor=white) ![Python](https://img.shields.io/badge/Python-424a53?style=flat-square&logo=python&logoColor=white)
 
-### SOTP
+### SOTP <!-- sotp_badge starts -->![now: P0 Cleanup & Truth, 2 of 3](https://img.shields.io/badge/now-P0%20Cleanup%20%26%20Truth%2C%202%20of%203-9a6700?style=flat-square&labelColor=424a53)<!-- sotp_badge ends -->
 
 [SOTP](https://github.com/Kacper-Slezak/SOTP): network monitoring platform. FastAPI with JWT and RBAC, Celery workers collecting ICMP and SNMPv3 metrics, PostgreSQL + TimescaleDB, HashiCorp Vault for device credentials, Prometheus and Grafana. Design decisions are recorded as [ADRs](https://github.com/Kacper-Slezak/SOTP/tree/main/docs/adr).
+
+![FastAPI](https://img.shields.io/badge/FastAPI-424a53?style=flat-square&logo=fastapi&logoColor=white) ![Celery](https://img.shields.io/badge/Celery-424a53?style=flat-square&logo=celery&logoColor=white) ![TimescaleDB](https://img.shields.io/badge/TimescaleDB-424a53?style=flat-square&logo=timescale&logoColor=white) ![Vault](https://img.shields.io/badge/Vault-424a53?style=flat-square&logo=vault&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-424a53?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-424a53?style=flat-square&logo=grafana&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-424a53?style=flat-square&logo=githubactions&logoColor=white)
 
 <table><tr><td valign="top" width="50%">
 
