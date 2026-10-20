@@ -1,0 +1,43 @@
+name: Profile images
+
+on:
+  schedule:
+    - cron: "17 5 * * *" # daily, picks up SOTP milestone progress
+  push:
+    branches: [main]
+    paths: ["profile/**", ".github/workflows/profile.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-images
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write # commit regenerated SVGs
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+      - run: pip install fonttools==4.66.1 brotli==1.2.0
+      - run: python profile/generate.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Commit if images changed
+        run: |
+          if git diff --quiet -- assets; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git commit -m "chore(profile): regenerate images"
+          git push
