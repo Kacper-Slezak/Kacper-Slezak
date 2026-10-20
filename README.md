@@ -14,7 +14,7 @@ A production-grade network monitoring platform built from scratch. Async Python 
 **[B.Sc. Thesis — mTLS Performance Overhead in Istio](https://github.com/Kacper-Slezak/B.Sc.-Thesis---mTLS-Performance-Overhead-in-Istio)**
 Benchmarking the real cryptographic cost of TLS 1.2 vs 1.3 in a Kubernetes service mesh. Forced protocol downgrades through Envoy's `EnvoyFilter` API, ran load tests with K6, and measured CPU/latency deltas. TLS 1.3 turned out to be both faster and cheaper on CPU. Full research log and raw results in the repo.
 
-**[Entry System — Biometric 2FA Access Control](https://github.com/kacper-slezak/entry-system)**
+**[Entry System — Biometric 2FA Access Control](https://github.com/Kacper-Slezak/Entry_System)**
 High-security entry system combining QR code scanning with facial recognition (Facenet512). FastAPI backend, PostgreSQL, DeepFace/OpenCV for biometrics, async email delivery on employee creation, and a GitHub Actions suite with mocked biometric embeddings for reliable CI. Containerised with Docker Compose.
 
 **[ThreatLens — AI Safety Heatmap](https://github.com/kacper-slezak/ThreatLens)** *(HackYeah 2025)*
