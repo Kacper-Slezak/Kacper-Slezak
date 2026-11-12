@@ -18,7 +18,7 @@ SRE intern at IBM, ICT student at AGH University of Krakow. Writing a B.Sc. thes
 <!-- sotp_progress starts -->
 **[P0 Cleanup & Truth](https://github.com/Kacper-Slezak/SOTP/milestone/1): 2/3** (current)
 
-[P1 Works End-to-End](https://github.com/Kacper-Slezak/SOTP/milestone/2): 0/8
+[P1 Works End-to-End](https://github.com/Kacper-Slezak/SOTP/milestone/2): 0/9
 
 [P2 DevSecOps Pipeline](https://github.com/Kacper-Slezak/SOTP/milestone/3): 0/13
 
