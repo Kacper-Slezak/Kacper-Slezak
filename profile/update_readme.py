@@ -30,35 +30,33 @@ def clean(title: str) -> str:
     return re.sub(r"^[A-Za-z]+ - ", "", title).strip()  # 'Backend - Implement X' -> 'Implement X'
 
 
-def short(name: str) -> str:
-    """'Kubernetes (K3d + Helm)' -> 'Kubernetes'"""
-    return re.sub(r"\s*\([^)]*\)", "", name).strip()
-
-
 def progress() -> tuple[str, str]:
-    """One-line roadmap: done phases ticked, current phase bold with its count, the rest by name."""
-    parts, current_found, now = [], False, "all phases done"
+    """Current phase and the one after it."""
+    lines, now = [], "all phases done"
     for m in sorted(get(f"{API}/milestones?state=all&per_page=100"), key=lambda m: m["number"]):
         issues = [i for i in get(f"{API}/issues?milestone={m['number']}&state=all&per_page=100")
                   if "pull_request" not in i]
         total, closed = len(issues), sum(i["state"] == "closed" for i in issues)
+        if not lines and (not total or closed == total):
+            continue  # finished phase
         code, _, name = m["title"].partition(" · ")
-        if total and closed == total:
-            parts.append(f"✓ {code} {short(name)}")
-        elif total and not current_found:
-            current_found = True
+        line = f"[{code} {name}]({m['html_url']}): {closed}/{total}"
+        if not lines:
             now = f"{code} {name}, {closed} of {total}"
-            parts.append(f"**[{code} {short(name)}]({m['html_url']}) {closed}/{total}**")
+            lines.append(f"**{line}** (now)")
         else:
-            parts.append(f"{code} {short(name)}")
-    return " → ".join(parts), now
+            lines.append(f"{line} (next)")
+            break
+    return "\n\n".join(lines), now
 
 
 def recently_closed(n: int = 3) -> str:
     issues = [i for i in get(f"{API}/issues?state=closed&sort=updated&direction=desc&per_page=50")
               if "pull_request" not in i and i.get("state_reason") == "completed"]
     issues.sort(key=lambda i: i["closed_at"], reverse=True)
-    return " · ".join(f"[#{i['number']} {clean(i['title'])}]({i['html_url']})" for i in issues[:n])
+    return "\n\n".join(
+        f"[#{i['number']} {clean(i['title'])}]({i['html_url']}) - {i['closed_at'][:10]}" for i in issues[:n]
+    )
 
 
 def replace(text: str, marker: str, content: str, inline: bool = False) -> str:
@@ -81,8 +79,8 @@ def main() -> int:
     text = README.read_text()
     roadmap, now = progress()
     text = replace(text, "sotp_badge", badge("now", now, "9a6700"), inline=True)
-    text = replace(text, "sotp_progress", roadmap, inline=True)
-    text = replace(text, "sotp_closed", recently_closed(), inline=True)
+    text = replace(text, "sotp_progress", roadmap)
+    text = replace(text, "sotp_closed", recently_closed())
     README.write_text(text)
     return 0
 
